@@ -2,11 +2,12 @@
 require 'rubygems'
 require 'bundler/gem_tasks'
 
+<div>
 require 'rake'
 require 'rdoc/task'
 require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new(:spec)
-
+</div>
 task :env do
   $: << File.expand_path('lib', File.dirname(__FILE__))
   require 'to_spreadsheet'
